@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Frontend Developer & UI/UX Designer Portföyü — Web Siteleri ve Arayüz Tasarımları"/>
+  <title>Portföyo — Frontend Developer & UI/UX Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><span class="logo-text">MD</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" data-key="nav_home">Ana Sayfa</a></li>
+      <li><a href="#about" data-key="nav_about">Hakkımda</a></li>
+      <li><a href="#skills" data-key="nav_skills">Yetenekler</a></li>
+      <li><a href="#projects" data-key="nav_projects">Projeler</a></li>
+      <li><a href="#contact" data-key="nav_contact">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── SECTION 1: HERO ── -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          PORTF<span class="o-stylized">
+            <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true">
+              <circle cx="30" cy="30" r="26" fill="none" stroke="white" stroke-width="4"/>
+              <!-- 4-point star inside O -->
+              <path d="M30 10 L33 27 L50 30 L33 33 L30 50 L27 33 L10 30 L27 27 Z" fill="white"/>
+            </svg>
+          </span>LYO
+        </h1>
+        <!-- PLACEHOLDER: Replace with your name -->
+        <p class="hero-subtitle" data-key="hero_subtitle">Melike Duman — Frontend Developer &amp; UI/UX Designer</p>
+        <div class="hero-scroll-hint">
+          <svg class="scroll-arrow bounce" viewBox="0 0 24 40" width="24" height="40" aria-hidden="true">
+            <path d="M12 2 L12 32 M4 24 L12 36 L20 24" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span data-key="scroll_hint">Aşağı kaydır</span>
+        </div>
+      </div>
+      <div class="hero-avatar-wrap">
+        <!-- Illustrated avatar image -->
+        <img src="assets/images/avatar.jpg" alt="Avatar illüstrasyonu" class="avatar-img"/>
+        <!-- Hand-drawn arrows + notes -->
+        <div class="hero-note note-1">
+          <svg class="hand-arrow arrow-draw" viewBox="0 0 80 50" width="80" height="50" aria-hidden="true">
+            <path d="M70 10 Q30 5 10 35 M10 35 L18 28 M10 35 L20 40" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="120" stroke-dashoffset="120"/>
+          </svg>
+          <span class="handwritten" data-key="hero_note1">Merhaba! Bu benim portföyüm</span>
+        </div>
+        <div class="hero-note note-2">
+          <span class="handwritten" data-key="hero_note2">Neler yapabileceğimi gör →</span>
+        </div>
+        <div class="hero-note note-3">
+          <svg class="hand-arrow arrow-draw" viewBox="0 0 60 80" width="40" height="60" aria-hidden="true">
+            <path d="M30 5 Q10 40 20 70 M20 70 L12 62 M20 70 L28 62" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="120" stroke-dashoffset="120"/>
+          </svg>
+          <span class="handwritten" data-key="hero_note3">Aşağı kaydır!</span>
+        </div>
+      </div>
+    </div>
+    <!-- Floating sparkle stars -->
+    <svg class="sparkle s1 spin-slow" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+      <path d="M20 2 L22.5 17.5 L38 20 L22.5 22.5 L20 38 L17.5 22.5 L2 20 L17.5 17.5 Z" fill="#FFD84D"/>
+    </svg>
+    <svg class="sparkle s2 pulse-star" viewBox="0 0 30 30" width="24" height="24" aria-hidden="true">
+      <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#FF7DA8"/>
+    </svg>
+    <svg class="sparkle s3 spin-slow" viewBox="0 0 30 30" width="18" height="18" aria-hidden="true">
+      <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="white"/>
+    </svg>
+    <svg class="sparkle s4 pulse-star" viewBox="0 0 30 30" width="28" height="28" aria-hidden="true">
+      <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#7B5CFF"/>
+    </svg>
+    <!-- 2025 EDITION starburst -->
+    <div class="starburst">
+      <svg viewBox="0 0 120 120" width="110" height="110" aria-hidden="true">
+        <polygon points="60,5 65,40 95,15 75,45 115,45 85,60 115,75 75,75 95,105 65,80 60,115 55,80 25,105 45,75 5,75 35,60 5,45 45,45 25,15 55,40" fill="#FFD84D"/>
+      </svg>
+      <div class="starburst-text"><span>2025</span><span class="starburst-sub">EDİSYON</span></div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 2: ABOUT ── -->
+  <section id="about" class="section about-section">
+    <!-- Marquee band -->
+    <div class="marquee-band marquee-band--primary">
+      <div class="marquee-track">
+        <span>HAKKIMDA • ABOUT ME • HAKKIMDA • ABOUT ME • HAKKIMDA • ABOUT ME • HAKKIMDA • ABOUT ME •&nbsp;</span>
+        <span aria-hidden="true">HAKKIMDA • ABOUT ME • HAKKIMDA • ABOUT ME • HAKKIMDA • ABOUT ME • HAKKIMDA • ABOUT ME •&nbsp;</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="about-left">
+        <div class="photo-blob-wrap">
+          <!-- Decorative shapes behind photo -->
+          <svg class="blob-decor blob-yellow" viewBox="0 0 200 200" width="200" height="200" aria-hidden="true">
+            <path d="M40,-55C52,-42,62,-30,68,-15C74,0,76,18,68,33C60,48,42,60,24,66C6,72,-12,72,-28,64C-44,56,-58,40,-64,22C-70,4,-68,-16,-58,-32C-48,-48,-30,-60,-12,-62C6,-64,28,-68,40,-55Z" fill="#FFD84D" transform="translate(100 100)"/>
+          </svg>
+          <svg class="blob-decor blob-pink" viewBox="0 0 200 200" width="160" height="160" aria-hidden="true">
+            <path d="M38,-50C48,-38,54,-24,58,-8C62,8,64,26,56,40C48,54,30,64,12,68C-6,72,-24,70,-38,60C-52,50,-62,32,-64,14C-66,-4,-60,-22,-50,-36C-40,-50,-26,-60,-10,-62C6,-64,28,-62,38,-50Z" fill="#FF6B4A" opacity="0.3" transform="translate(80 90)"/>
+          </svg>
+          <!-- Dotted pattern -->
+          <svg class="dot-pattern" viewBox="0 0 80 80" width="80" height="80" aria-hidden="true">
+            <defs>
+              <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.5" fill="#7B5CFF" opacity="0.4"/>
+              </pattern>
+            </defs>
+            <rect width="80" height="80" fill="url(#dots)"/>
+          </svg>
+
+          <!-- ============================================================ -->
+          <!-- PROFILE PHOTO BLOB: Easy to swap image path anytime          -->
+          <!-- ============================================================ -->
+          <div class="blob-photo-container">
+            <div class="blob-photo-mask">
+              <img 
+                src="assets/images/profile.jpg" 
+                alt="Portrait photo of me, smiling softly, wearing a patterned hijab" 
+                class="profile-photo"
+                loading="lazy"
+                width="240"
+                height="260"
+              />
+            </div>
+            <!-- Subtle 4px cream outline following the organic blob shape -->
+            <svg class="blob-outline" viewBox="0 0 240 260" width="240" height="260" aria-hidden="true">
+              <path d="M120,10 C170,10 220,50 230,100 C240,150 210,210 170,240 C130,270 60,260 30,220 C0,180 10,110 40,70 C70,30 70,10 120,10Z" fill="none" stroke="#FFF4EC" stroke-width="4"/>
+            </svg>
+          </div>
+          <!-- ============================================================ -->
+
+          <!-- Sparkle near photo -->
+          <svg class="sparkle photo-sparkle spin-slow" viewBox="0 0 30 30" width="28" height="28" aria-hidden="true">
+            <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#FFD84D"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <h2 class="about-greeting" data-key="about_greeting">Merhaba!</h2>
+        <!-- Short Bio -->
+        <p class="about-bio" data-key="about_bio">
+          Ben bir frontend geliştirici ve tasarımcıyım. Kullanıcı odaklı, modern ve responsive web siteleri geliştirmeyi, estetik ve işlevsel arayüzler tasarlamayı seviyorum. Kod ile tasarımı bir araya getirerek özgün dijital deneyimler üretiyorum.
+        </p>
+        <!-- ============================================================ -->
+        <!-- EDUCATION CARD: Easily edit your school info below           -->
+        <!-- ============================================================ -->
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <div class="edu-school" data-key="edu_school">Uludağ Üniversitesi</div>
+            <div class="edu-dept" data-key="edu_dept">Bilgisayar Programcılığı</div>
+            <div class="edu-years" data-key="edu_years">2024 – 2026</div>
+          </div>
+        </div>
+        <!-- Contact info block -->
+        <div class="contact-info-block" id="about-contact-block">
+          <p class="contact-info-label" data-key="about_contact_title">İletişim</p>
+          <!-- ============================================================ -->
+          <!-- CONTACT DETAILS: Real working links (easily edit below)      -->
+          <!-- ============================================================ -->
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:dumanmelike617@gmail.com">
+                <svg class="contact-svg-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+                  <path d="m22 7-10 7L2 7"></path>
+                </svg>
+                <span>dumanmelike617@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+905383755834">
+                <svg class="contact-svg-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>0538 375 58 34</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/melike576" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-svg-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span>GitHub: melike576</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/melike-duman-7027ba339" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-svg-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                </svg>
+                <span>LinkedIn: Melike Duman</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 3: SKILLS ── -->
+  <section id="skills" class="section skills-section">
+    <div class="section-inner">
+      <h2 class="section-title skills-title reveal">
+        <span class="title-highlight">
+          <svg class="brush-stroke" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M5 20 Q75 8 150 18 Q225 28 295 15" stroke="#FFD84D" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+          <span data-key="skills_title">YETENEKLER</span>
+        </span>
+      </h2>
+      <div class="skills-grid">
+        <!-- 1. HTML -->
+        <div class="skill-card reveal" data-skill="html">
+          <div class="skill-icon" style="background:#FF6B4A;color:#FFFFFF;">
+            <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor">
+              <path d="M5 4 L7 25 L16 28 L25 25 L27 4 Z" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M11 11 L8 16 L11 21 M21 11 L24 16 L21 21" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="skill-name">HTML</span>
+        </div>
+        <!-- 2. CSS -->
+        <div class="skill-card reveal" data-skill="css">
+          <div class="skill-icon" style="background:#7B5CFF;color:#FFFFFF;">
+            <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+              <path d="M5 4 L7 25 L16 28 L25 25 L27 4 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <text x="16" y="21" font-family="'Bebas Neue', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">{ }</text>
+            </svg>
+          </div>
+          <span class="skill-name">CSS</span>
+        </div>
+        <!-- 3. JavaScript (High contrast dark card with yellow JS) -->
+        <div class="skill-card reveal" data-skill="javascript">
+          <div class="skill-icon" style="background:#2A1B3D;color:#FFD84D;">
+            <span style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;font-weight:bold;letter-spacing:1px;color:#FFD84D;">JS</span>
+          </div>
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <!-- 4. Figma -->
+        <div class="skill-card reveal" data-skill="figma">
+          <div class="skill-icon figma-icon" style="background:#2A1B3D;color:#fff;">
+            <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+              <rect x="5" y="4" width="10" height="10" rx="3" fill="#FF6B4A"/>
+              <rect x="17" y="4" width="10" height="10" rx="3" fill="#FFD84D"/>
+              <rect x="5" y="16" width="10" height="10" rx="3" fill="#7B5CFF"/>
+              <rect x="17" y="16" width="10" height="10" rx="3" fill="#0ACF83"/>
+            </svg>
+          </div>
+          <span class="skill-name">Figma</span>
+        </div>
+        <!-- 5. Adobe XD -->
+        <div class="skill-card reveal" data-skill="adobexd">
+          <div class="skill-icon" style="background:#2A1B3D;color:#FF2BC2;">
+            <span style="font-family:'Bebas Neue',sans-serif;font-size:2.1rem;font-weight:bold;letter-spacing:1px;color:#FF2BC2;">Xd</span>
+          </div>
+          <span class="skill-name">Adobe XD</span>
+        </div>
+        <!-- 6. Canva -->
+        <div class="skill-card reveal" data-skill="canva">
+          <div class="skill-icon" style="background:linear-gradient(135deg, #00C4CC, #7B5CFF);color:#FFFFFF;">
+            <svg viewBox="0 0 60 28" width="54" height="26" aria-hidden="true">
+              <text x="30" y="20" font-family="'Caveat', cursive" font-size="22" font-weight="700" text-anchor="middle" fill="#FFFFFF">canva</text>
+            </svg>
+          </div>
+          <span class="skill-name">Canva</span>
+        </div>
+      </div>
+      <!-- Soft Skills Marquee -->
+      <div class="soft-skills-band">
+        <span class="soft-skills-label">SOFT SKILLS:</span>
+        <div class="soft-marquee-wrap">
+          <div class="soft-marquee-track">
+            <span>Problem Çözme ✦ Takım Çalışması ✦ Yaratıcılık ✦ Detaylara Dikkat ✦ Hızlı Öğrenme ✦ İletişim ✦&nbsp;</span>
+            <span aria-hidden="true">Problem Çözme ✦ Takım Çalışması ✦ Yaratıcılık ✦ Detaylara Dikkat ✦ Hızlı Öğrenme ✦ İletişim ✦&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 4: PROJECTS ── -->
+  <section id="projects" class="section projects-section">
+    <div class="section-inner">
+      <h2 class="section-title projects-title reveal" data-key="projects_title">PROJELERİM</h2>
+      <div class="handwritten-note projects-note">
+        <svg class="hand-arrow" viewBox="0 0 60 50" width="50" height="40" aria-hidden="true">
+          <path d="M5 10 Q30 5 50 30 M50 30 L42 24 M50 30 L44 38" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="handwritten" data-key="projects_note">Detaylar için tıkla!</span>
+      </div>
+      <!-- Filter buttons: Tümü / Web / Oyun / Tasarım -->
+      <div class="filter-bar" role="group" aria-label="Proje kategorileri">
+        <button class="filter-btn active" data-filter="all" data-key="filter_all">Tümü</button>
+        <button class="filter-btn" data-filter="web" data-key="filter_web">Web</button>
+        <button class="filter-btn" data-filter="oyun" data-key="filter_oyun">Oyun</button>
+        <button class="filter-btn" data-filter="tasarim" data-key="filter_tasarim">Tasarım</button>
+      </div>
+      <!-- Project grid dynamically rendered from projectsData array in js/main.js -->
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+
+    <!-- Lightbox with Demo, Play, GitHub, Figma links and gallery -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Proje detayı" hidden>
+      <button class="lightbox-close" id="lb-close" aria-label="Kapat">✕</button>
+      <button class="lightbox-prev" id="lb-prev" aria-label="Önceki">‹</button>
+      <button class="lightbox-next" id="lb-next" aria-label="Sonraki">›</button>
+      <div class="lightbox-inner">
+        <div class="lightbox-img-wrap" id="lb-img-wrap"></div>
+        <div class="lb-gallery-thumbs" id="lb-gallery-thumbs" hidden></div>
+        <div class="lightbox-info">
+          <div class="lb-header">
+            <div class="lb-tags-row">
+              <span class="lb-category-tag" id="lb-category-tag"></span>
+              <span class="lb-featured-badge" id="lb-featured-badge" data-key="featured_badge">⭐ Öne Çıkan</span>
+            </div>
+            <h3 class="lb-title" id="lb-title"></h3>
+          </div>
+          <p class="lb-desc" id="lb-desc"></p>
+          <div class="lb-tech-chips" id="lb-tech-chips"></div>
+          <div class="lb-links" id="lb-links">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="lb-btn lb-btn-demo" id="lb-link-demo">
+              <span>🌐</span> <span data-key="lb_demo">Siteyi Gör</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="lb-btn lb-btn-play" id="lb-link-play">
+              <span>🎮</span> <span data-key="lb_play">Oyunu Oyna</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="lb-btn lb-btn-github" id="lb-link-github">
+              <span>💻</span> <span data-key="lb_github">GitHub</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="lb-btn lb-btn-figma" id="lb-link-figma">
+              <span>🎨</span> <span data-key="lb_figma">Figma'da Gör</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 5: CONTACT ── -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner contact-inner">
+      <!-- Sparkle decorations -->
+      <svg class="sparkle cs1 spin-slow" viewBox="0 0 30 30" width="32" height="32" aria-hidden="true">
+        <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#FFD84D"/>
+      </svg>
+      <svg class="sparkle cs2 pulse-star" viewBox="0 0 30 30" width="22" height="22" aria-hidden="true">
+        <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#7B5CFF"/>
+      </svg>
+      <h2 class="section-title contact-title" data-key="contact_title">BİRLİKTE ÇALIŞALIM</h2>
+      <p class="contact-sub" data-key="contact_sub">Staj, iş fırsatı ya da yeni bir proje fikri... Bana yazmaktan çekinme!</p>
+      <div class="contact-links">
+        <a href="mailto:dumanmelike617@gmail.com" class="contact-link-item">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+            <path d="m22 7-10 7L2 7"></path>
+          </svg>
+          <span>dumanmelike617@gmail.com</span>
+        </a>
+        <a href="tel:+905383755834" class="contact-link-item">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>0538 375 58 34</span>
+        </a>
+        <a href="https://github.com/melike576" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/melike-duman-7027ba339" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <!-- Sticker button -->
+      <a href="mailto:dumanmelike617@gmail.com?subject=Merhaba%20Melike!" class="sticker-btn" id="contact-mail-btn">
+        <svg class="sticker-btn-star spin-slow" viewBox="0 0 30 30" width="20" height="20" aria-hidden="true">
+          <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#FFD84D"/>
+        </svg>
+        <span data-key="contact_btn">MERHABA DE!</span>
+        <svg class="sticker-btn-star spin-slow" viewBox="0 0 30 30" width="20" height="20" aria-hidden="true">
+          <path d="M15 2 L17 13 L28 15 L17 17 L15 28 L13 17 L2 15 L13 13 Z" fill="#FFD84D"/>
+        </svg>
+      </a>
+      <div class="handwritten-note contact-note">
+        <span class="handwritten" data-key="contact_note">Mesajını okumak için sabırsızlanıyorum!</span>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <p data-key="footer_text">© 2026 Melike Duman. Tüm hakları saklıdır.</p>
+    </footer>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
