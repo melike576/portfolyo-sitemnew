@@ -1,2 +1,0 @@
-[24528:7112:1029/135624.757:ERROR:chrome\installer\util\google_update_settings_win.cc:270] Failed opening key Software\Google\Update\ClientStateMedium\{8A69D345-D564-463c-AFF1-A69D9E530F96} to set usagestats; result: 5
-29271 bytes written to file C:\Users\Melike\.gemini\antigravity\brain\51ab2eb8-64c0-4b95-bc44-db92c81513cd\scratch\test.png
